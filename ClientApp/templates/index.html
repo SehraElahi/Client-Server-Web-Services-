@@ -1,0 +1,91 @@
+<!-- Navigation -->
+<html>
+  <head>
+    <title>Client app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- <link rel="text/javascript" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
+    <!-- <link rel="stylesheet" href="/static/css/main.css" -->
+  </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+  <div class="container">
+    <a class="navbar-brand" href="/">Welcome! Lets tell a story...</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+</html>
+
+<!-- Page Content -->
+<html>
+<!-- <head>
+  <title>Flask app</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head> -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+      <h1 align ="center" class="font-weight-light">Brexit is happening and the weather is getting colder!</h1>
+      <h1 align ="center" class="font-weight-light">WE MUST TRAVEL TO THE HOTTEST EU COUNTRY IMMEDIATLY </h1>
+      <h3 style="text-align:center" class="font-weight-light">But what country would that be....<br></h3>
+      <div style="display: flex; justify-content: center;">
+      <img src="../static/images/giphy.gif" class="center">
+      </div>
+      <h3 style="text-align:center" class="font-weight-light"><br>Scroll down to reveal!</h3>
+      <div style="height: 700px"></div>
+      <h4 style="text-align:center" class="font-weight-light">Recorded Temperatures of Warmest Locations in the top 5 Warmest Countries - EU<br><i>December - January</i><br><br></h3>
+        <body>
+        <table class="centerTable">
+          <tr>
+            <th>{{country}}</th>
+            <th>{{c1}}</th>
+            <th>{{c2}}</th>
+            <th>{{c3}}</th>
+            <th>{{c4}}</th>
+          </tr>
+          <tr>
+            <td>{{t1}} Celcius</td>
+            <td>{{t2}} Celcius</td>
+            <td>{{t3}} Celcius</td>
+            <td>{{t4}} Celcius</td>
+            <td>{{t5}} Celcius</td>
+          </tr>
+        </table>
+      </body>
+      <br>
+      <br>
+      <br>
+      <h1 align ="center" class="font-weight-light">{{ country }} IT IS!! :) </h1>
+      <p align = "center" class="lead">Forget Spain and forget the Canary Islands! {{country}} is the warmest country in the EU during winter time!</p>
+      <!-- <h4 style = "text-align:center" class="font-weight-light"> But where can we go...?</h4> -->
+      <br>
+      <div style="text-align:right">
+        <form action="travel">
+          <button class="button" type="submit">Where in {{country}} do we go?</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</html>

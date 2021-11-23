@@ -1,0 +1,96 @@
+<!-- Navigation -->
+<html>
+  <head>
+    <title>Client app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!-- <link rel="text/javascript" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"> -->
+    <!-- <link rel="stylesheet" href="/static/css/main.css" -->
+  </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+  <div class="container">
+    <a class="navbar-brand" href="/">Back to Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/travel">Travel
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+</html>
+<!-- Page Content -->
+<html>
+<!-- <head>
+  <title>Flask app</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head> -->
+<div class="container">
+  <div class="card border-0 shadow my-5">
+    <div class="card-body p-5">
+      <h1 align ="center" class="font-weight-light">{{place}}!<br></h1>
+      <div style="display: flex; justify-content: center;">
+      <img src="../static/images/larnaca.jpg" class="right" width="50%" height="50%">
+      </div>
+      <p align = "center" class="lead"><br>No this is not Miami beach but rather the capital of {{country}}! :)<br> Now let us travel to this sunny destination 8-)</p>
+      <h4 style="text-align:center" class="font-weight-light"><br><br>Top 3 Live Results for Heathrow London to {{place}} Airport<br><br></h3>
+        <body>
+        <table class="centerTable">
+          <tr>
+            <th>Minimum Price (GBP)</th>
+            <th>Outbound Date</th>
+            <th>Inbound Date</th>
+            <th>Flight Carrier</th>
+          </tr>
+          <tr>
+            <td>£{{price1}}0</td>
+            <td>{{date1}}</td>
+            <td>30/01/2020</td>
+            <td>{{carrier1}}</td>
+          </tr>
+          <tr>
+            <td>£{{price2}}0</td>
+            <td>{{date2}}</td>
+            <td>30/01/2020</td>
+            <td>{{carrier2}}</td>
+          </tr>
+          <tr>
+            <td>£{{price3}}0</td>
+            <td>{{date3}}</td>
+            <td>30/01/2020</td>
+            <td>{{carrier3}}</td>
+          </tr>
+        </table>
+      </body>
+        <!-- <p align = "center" class="lead"><br>For booking flight tickets and more info please visit </p> -->
+        <h6 style="text-align:center" class="font-weight-light" align = "center" class="lead"><br>Due to the risk of Brexit occuring with no deal, the inbound date was set to 30/01/2020 - so that you can return home safely!<br>For booking flight tickets and more info please visit <a href="https://www.skyscanner.net/">Skyscanner</a></h6>
+        <br>
+        <br>
+        <div style="text-align:right">
+          <form action="weather">
+            <button class="button" type="submit">Still Not Convinced?  :( Click here!</button>
+          </div>
+      <div style="height: 700px"></div>
+    </html>
+    </div>
+  </div>
+</div>
+</html>
